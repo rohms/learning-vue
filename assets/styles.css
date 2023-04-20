@@ -9,11 +9,9 @@ body {
   margin: 30px;
   background-color: #39495c;
   border-radius: 5px;
-  font-size: 18px;
-  width: 160px;
-  height: 60px;
+  font-size: 15px;
+  padding: 1rem;
   color: white;
-  padding: 20px;
   box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17),
     inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15),
     inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
@@ -21,11 +19,15 @@ body {
   cursor: pointer;
 }
 
+.review-recommend {
+  font-size: 1rem;
+}
+
 .cart {
   margin: 25px 100px;
   float: right;
   border: 1px solid #d8d8d8;
-  padding: 10px 30px;
+  padding: 30px 30px;
   background-color: white;
   -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
@@ -39,7 +41,6 @@ body {
   border: 2px solid #d8d8d8;
   border-radius: 50%;
 }
-
 
 .disabledButton {
   background-color: #d8d8d8;
@@ -89,7 +90,7 @@ li {
 }
 
 .out-of-stock-img {
-  opacity:0.5
+  opacity: 0.5;
 }
 
 p {
@@ -128,6 +129,7 @@ p {
 
 .review-container {
   width: 425px;
+  height: fit-content;
   padding: 20px;
   background-color: white;
   -webkit-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
@@ -137,8 +139,14 @@ p {
   border: 2px solid #d8d8d8;
 }
 
+.recommend {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 .review-container li {
   margin-bottom: 30px;
+  border-bottom: 2px solid #968c8c;
 }
 
 .review-form .button {
@@ -163,6 +171,13 @@ textarea {
 
 ul {
   list-style-type: none;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
 @media only screen and (max-width: 600px) {
